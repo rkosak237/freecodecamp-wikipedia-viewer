@@ -1,0 +1,127 @@
+//background 
+$main-color:#f39c12;
+//text, inside of btn
+$secondary-color:#2c3e50;
+//colors connected with hover, focus 
+$highlight:#ecf0f1;
+//accents, inside of button
+$accent:#f1c40f;
+
+@import url('https://fonts.googleapis.com/css?family=Lato" rel="stylesheet');
+body {
+  width:100%;
+  height:100vh;
+  background-color:$main-color;
+  display:flex;
+  overflow:auto;
+}
+
+section {
+  display:flex;
+  align-items:center;
+  width:100%;
+}
+.center-element {
+    display:flex;
+    margin: 0 auto;
+}
+.container {
+ width:100%;
+     .container--api-result {
+      height:10rem;
+      width:125rem;
+      font-size:1.6rem;
+      @extend .center-element;
+       
+       ul {
+         list-style:none;
+         
+         li {
+           border: 2px solid $secondary-color;
+           border-radius:10px;
+           padding: 1rem 1rem 1rem 4rem;
+           margin: 10px;
+           transition: .5s;
+           
+           a {
+           color: $secondary-color;
+           transition: .5s;
+           font-family: 'Lato', sans-serif;
+             
+             &:hover {
+               color:$highlight;
+             }
+           }
+           
+         }
+       }
+    }
+  
+  .content_btn-getArticle {
+    width:25rem;
+    height:4rem;
+    text-decoration:none;
+    margin-top:2rem;
+    @extend .center-element;
+    transition: 1s ease;
+    background-color:$secondary-color;
+     color:#f1c40f;
+     font-weight:700;
+     border-radius:50px;
+     font-size:2rem;
+     border: 0;
+     box-shadow: none;
+    display:flex;
+    justify-content:space-evenly;
+  }
+  
+  .getArticle-btn__active {
+    background-color: $main-color;
+  }
+  
+  .content {
+    width:45rem;
+    align-items:center;
+    justify-content:flex-end;
+    @extend .center-element;
+    
+    
+    input {
+    outline:none;
+    width:30%;
+    right:0;
+    position:relative;
+    display:block;
+    height:60px;
+    border-left: 0px $main-color;
+    border-right: 0px $main-color;
+    border-top: 0px $main-color;
+    border-bottom: 1px solid $secondary-color;
+    background-color:$main-color;
+    color:black;
+    font-size: 2rem;
+    letter-spacing:5px;
+    transition: .5s ease;
+    box-shadow:none;
+     
+      
+      &:focus {
+        border-left: 0px $main-color;
+        border-right: 0px $main-color;
+        border-top: 0px $main-color;
+        width:100%;
+      }
+  }
+    
+  
+  a {
+    
+    .icon {
+      color:$secondary-color;
+      padding:0 0 0 10px;
+    }
+    
+  }
+   
+  }
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Lato" rel="stylesheet');
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f39c12;
+  display: flex;
+  overflow: auto;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.center-element, .container .container--api-result, .container .content_btn-getArticle, .container .content {
+  display: flex;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+}
+.container .container--api-result {
+  height: 10rem;
+  width: 125rem;
+  font-size: 1.6rem;
+}
+.container .container--api-result ul {
+  list-style: none;
+}
+.container .container--api-result ul li {
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  padding: 1rem 1rem 1rem 4rem;
+  margin: 10px;
+  transition: .5s;
+}
+.container .container--api-result ul li a {
+  color: #2c3e50;
+  transition: .5s;
+  font-family: 'Lato', sans-serif;
+}
+.container .container--api-result ul li a:hover {
+  color: #ecf0f1;
+}
+.container .content_btn-getArticle {
+  width: 25rem;
+  height: 4rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: 1s ease;
+  background-color: #2c3e50;
+  color: #f1c40f;
+  font-weight: 700;
+  border-radius: 50px;
+  font-size: 2rem;
+  border: 0;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .getArticle-btn__active {
+  background-color: #f39c12;
+}
+.container .content {
+  width: 45rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container .content input {
+  outline: none;
+  width: 30%;
+  right: 0;
+  position: relative;
+  display: block;
+  height: 60px;
+  border-left: 0px #f39c12;
+  border-right: 0px #f39c12;
+  border-top: 0px #f39c12;
+  border-bottom: 1px solid #2c3e50;
+  background-color: #f39c12;
+  color: black;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  transition: .5s ease;
+  box-shadow: none;
+}
+.container .content input:focus {
+  border-left: 0px #f39c12;
+  border-right: 0px #f39c12;
+  border-top: 0px #f39c12;
+  width: 100%;
+}
+.container .content a .icon {
+  color: #2c3e50;
+  padding: 0 0 0 10px;
+}
